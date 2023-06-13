@@ -37,3 +37,11 @@ document.getElementById("demo5").innerHTML = fruits
 // slice method
 let sliceFruits = fruits.slice(2)
 document.getElementById("demo6").innerHTML = sliceFruits
+
+// sort
+fruits.sort()
+document.getElementById("demo7").innerHTML = fruits
+
+// reverse
+fruits.reverse()
+document.getElementById("demo8").innerHTML = fruits
