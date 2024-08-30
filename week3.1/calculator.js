@@ -19,6 +19,6 @@ function calculator(num1, num2, operation) {
 }
 console.log(calculator(2,5,"add"))
 console.log(calculator(2,5,"subtract"))
-console.log(calculator(2,5,"multiply"))
+console.log(calculator(2,5,"multiply")) 
 console.log(calculator(2,5,"divide"))
 console.log(calculator('a',5,"add"))
