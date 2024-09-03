@@ -1,10 +1,24 @@
 function findDuplicate(nums) {
-    const set = new Set()
+    // approach -1
+    // =======================
+    // const set = new Set()
+    // for(let num of nums){
+    //     if(set.has(num)){
+    //         return true
+    //     } else{
+    //         set.add(num)
+    //     }
+    // }
+    // return false
+    // ==========================
+    //approach -2
+    // ==========================
+    const map = new Map()
     for(let num of nums){
-        if(set.has(num)){
+        if(map.has(num)){
             return true
         } else{
-            set.add(num)
+            map.set(num,1)
         }
     }
     return false
