@@ -6,8 +6,6 @@
 
 // Please solve it without using lodash's _.chunk function.
 
- 
-
 // Example 1:
 
 // Input: arr = [1,2,3,4,5], size = 1
@@ -28,35 +26,34 @@
 // Input: arr = [], size = 1
 // Output: []
 // Explanation: There are no elements to be chunked so an empty array is returned.
-var chunk = function(arr, size) {
-    // approach -1
-    // const result = []
-    // for (let i=0; i<arr.length; i+=size){
-    //     const chankArr = arr.slice(i,i+size)
-    //     result.push(chankArr)
-    // }
-    // return result
-    // approach -2
-    // const result = []
-    // while (arr.length>0){
-    //     const chankArr = arr.splice(0,size)
-    //     result.push(chankArr) 
-    // }
-    // return result
-    // approach -3
-    let result = []
-    let chunk = []
-    for(let i=0; i<arr.length; i++){
-        chunk.push(arr[i])
-        if(chunk.length === size){
-            result.push(chunk)
-            chunk = []
-        }
-
+var chunk = function (arr, size) {
+  // approach -1
+  // const result = []
+  // for (let i=0; i<arr.length; i+=size){
+  //     const chankArr = arr.slice(i,i+size)
+  //     result.push(chankArr)
+  // }
+  // return result
+  // approach -2
+  // const result = []
+  // while (arr.length>0){
+  //     const chankArr = arr.splice(0,size)
+  //     result.push(chankArr)
+  // }
+  // return result
+  // approach -3
+  let result = [];
+  let chunk = [];
+  for (let i = 0; i < arr.length; i++) {
+    chunk.push(arr[i]);
+    if (chunk.length === size) {
+      result.push(chunk);
+      chunk = [];
     }
-    if(chunk.length > 0){
-        result.push(chunk)
-    }
-    return result
+  }
+  if (chunk.length > 0) {
+    result.push(chunk);
+  }
+  return result;
 };
-console.log(chunk([1,9,6,3,2],3))
+console.log(chunk([1, 9, 6, 3, 2], 3));
