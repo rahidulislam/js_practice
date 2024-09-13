@@ -37,10 +37,25 @@ var chunk = function(arr, size) {
     // }
     // return result
     // approach -2
-    const result = []
-    while (arr.length>0){
-        const chankArr = arr.splice(0,size)
-        result.push(chankArr) 
+    // const result = []
+    // while (arr.length>0){
+    //     const chankArr = arr.splice(0,size)
+    //     result.push(chankArr) 
+    // }
+    // return result
+    // approach -3
+    let result = []
+    let chunk = []
+    for(let i=0; i<arr.length; i++){
+        chunk.push(arr[i])
+        if(chunk.length === size){
+            result.push(chunk)
+            chunk = []
+        }
+
+    }
+    if(chunk.length > 0){
+        result.push(chunk)
     }
     return result
 };

@@ -33,10 +33,21 @@
 
 class Solution:
     def chunkArray(self, arr, size):
+        # approch - 1
+        # result = []
+        # for i in range(0, len(arr), size):
+        #     chunk_arr = arr[i:i+size]
+        #     result.append(chunk_arr)
+        # return result
         result = []
-        for i in range(0, len(arr), size):
-            chunk_arr = arr[i:i+size]
-            result.append(chunk_arr)
+        chunk = []
+        for i in range(len(arr)):
+            chunk.append(arr[i])
+            if len(chunk) == size:
+                result.append(chunk)
+                chunk = []
+        if len(chunk) > 0:
+            result.append(chunk)
         return result
 
 s = Solution()
