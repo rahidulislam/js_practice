@@ -1,6 +1,6 @@
 # leetcode problem - 387
 class Solution(object):
-    def firstUniqChar(self, s):
+    def firstUniqChar(self, s:str)->int:
         """
         :type s: str
         :rtype: int

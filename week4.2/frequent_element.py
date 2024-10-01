@@ -1,5 +1,5 @@
 class Solution:
-    def frequent_element(self,nums,k):
+    def frequent_element(self,nums:list,k:int)->list:
         hashmap = {}
         for num in nums:
             if num in hashmap:

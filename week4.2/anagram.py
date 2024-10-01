@@ -1,4 +1,4 @@
-def is_anagram(s, t):
+def is_anagram(s:str, t:str)->bool:
     frequency_s = {}
     frequency_t = {}
     for i in s:

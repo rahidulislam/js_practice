@@ -1,5 +1,5 @@
 class Solution:
-    def subarraySum(self,nums,k):
+    def subarraySum(self,nums:list,k:int)->int:
         # dictionary to store prefix sum count
         prefix_sum_count = {0:1}
         current_sum = 0
