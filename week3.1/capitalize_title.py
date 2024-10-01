@@ -1,5 +1,5 @@
 class Solution(object):
-    def capitalizeTitle(self, title):
+    def capitalizeTitle(self, title:str)->str:
         """
         :type title: str
         :rtype: str

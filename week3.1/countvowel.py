@@ -1,4 +1,4 @@
-def count_vowel(s):
+def count_vowel(s:str)->int:
     vowel = 'aeiouAEIOU'
     count = 0
     for i in s:
