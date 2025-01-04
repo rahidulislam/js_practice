@@ -123,3 +123,12 @@ user5.f = sayHi;
 admin1.f = sayHi;
 user5.f()
 admin1.f()
+
+function makeUser2(){
+    return {
+        name:"John",
+        ref:this
+    }
+}
+let user6 = makeUser2();
+console.log(user6.ref.name)
