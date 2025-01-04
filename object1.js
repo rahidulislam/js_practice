@@ -113,3 +113,13 @@ console.log(user4.sizes===clone3.sizes)
 
 console.log(clone3.me === clone3)
 
+// this in object
+let user5 = {name:"John"}
+let admin1 = {name:"Admin"}
+function sayHi(){
+    console.log(this.name)
+}
+user5.f = sayHi;
+admin1.f = sayHi;
+user5.f()
+admin1.f()
